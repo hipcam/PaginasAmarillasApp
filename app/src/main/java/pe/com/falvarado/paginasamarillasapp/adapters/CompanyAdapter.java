@@ -56,7 +56,7 @@ public class CompanyAdapter extends RecyclerView.Adapter<CompanyAdapter.ViewHold
         holder.logoImage.setImageResource(resId);
         holder.nameText.setText(company.getName());
         holder.addressText.setText(company.getAddress());
-        holder.phoneText.setText(company.getPhone());
+        holder.phoneText.setText(" "+company.getPhone());
 
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
